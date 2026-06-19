@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="QuickBite — India's most loved street-food delivery platform. Order fresh, bold flavours from 500+ top restaurants. Delivered hot in 30 minutes."
+    />
+    <meta name="keywords" content="food delivery, order online, biryani, pizza, burger, QuickBite, street food" />
+    <meta name="author" content="QuickBite Technologies Pvt. Ltd." />
+
+    <!-- Street Food CDN Fonts: Bowlby One + DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>QuickBite — Street Food Delivered Fast | Order Online</title>
+  </head>
+
+  <body>
+    <!-- ==================== STICKY NAV ==================== -->
+    <header id="top">
+      <div class="header-inner">
+        <!-- Brand -->
+        <a href="#home" class="brand" id="brand-logo">
+          <span class="brand-icon">🍜</span>
+          <span class="brand-name">QuickBite</span>
+        </a>
+
+        <!-- Nav Links -->
+        <nav id="main-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#categories">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#best-sellers">Best Sellers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#restaurants">Restaurants</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button id="search-btn" aria-label="Search food">🔍</button>
+          <button id="cart-btn" aria-label="View cart">
+            🛒 <span class="cart-badge">3</span>
+          </button>
+          <button id="order-now-btn" href="#restaurants">Order Now</button>
+        </div>
+      </div>
+
+      <!-- Tagline bar -->
+      <div class="tagline-bar">
+        <p class="tagline-text">
+          🔥 Free delivery on your first 3 orders &nbsp;|&nbsp; Use code:
+          <strong>STREET30</strong> &nbsp;|&nbsp; 🏍️ 30-min guaranteed delivery
+        </p>
+      </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <p class="hero-label">India's Boldest Street Food Platform</p>
+        <h1 class="hero-title">
+          Real Street<br />
+          <span class="hero-accent">Food. Real</span><br />
+          Fast.
+        </h1>
+        <p class="hero-desc">
+          Discover 500+ restaurants bringing authentic street-food flavours — from smoky tandoori
+          to crispy street-side snacks — delivered piping hot in under 30 minutes. No fuss. Just
+          bold, brilliant food.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="search-wrap">
+          <div class="search-box" id="hero-search">
+            <span class="search-icon">📍</span>
+            <input
+              type="text"
+              id="location-input"
+              class="search-input"
+              placeholder="Enter your delivery location…"
+              aria-label="Delivery location"
+            />
+            <span class="search-divider">|</span>
+            <input
+              type="text"
+              id="food-search-input"
+              class="search-input search-food"
+              placeholder="Search for food, restaurants…"
+              aria-label="Search food"
+            />
+            <button class="search-cta" id="find-food-btn">Find Food →</button>
+          </div>
+        </div>
+
+        <!-- Quick Picks -->
+        <div class="quick-picks">
+          <span class="qp-label">Popular:</span>
+          <a href="#best-sellers" class="qp-tag">🍕 Pizza</a>
+          <a href="#best-sellers" class="qp-tag">🍔 Burger</a>
+          <a href="#best-sellers" class="qp-tag">🍛 Biryani</a>
+          <a href="#best-sellers" class="qp-tag">🍜 Noodles</a>
+          <a href="#best-sellers" class="qp-tag">🍰 Desserts</a>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <img
+            src="./hero_banner.png"
+            alt="Delicious street food — pizza, burger and biryani"
+            class="hero-img"
+            id="hero-main-img"
+            loading="eager"
+          />
+          <!-- Floating badges -->
+          <div class="badge badge-top-left" id="badge-rating">⭐ 4.9 Rating</div>
+          <div class="badge badge-top-right" id="badge-delivery">🏍️ 30 Min</div>
+          <div class="badge badge-bottom" id="badge-orders">5M+ Orders Delivered</div>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <strong class="stat-num">500+</strong>
+          <span class="stat-label">Restaurants</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <strong class="stat-num">50+</strong>
+          <span class="stat-label">Cities</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <strong class="stat-num">2M+</strong>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <strong class="stat-num">30 Min</strong>
+          <span class="stat-label">Avg. Delivery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CATEGORIES SECTION ==================== -->
+    <section id="categories" class="categories-section">
+      <div class="section-header">
+        <p class="section-label">What Are You Craving?</p>
+        <h2 class="section-title">Browse by Category</h2>
+        <p class="section-desc">
+          From fiery street snacks to wholesome thalis — every craving has a home on QuickBite.
+        </p>
+      </div>
+
+      <div class="categories-grid">
+        <a href="#best-sellers" class="cat-card" id="cat-pizza">
+          <div class="cat-emoji">🍕</div>
+          <span class="cat-name">Pizza</span>
+          <span class="cat-count">48 places</span>
+        </a>
+        <a href="#best-sellers" class="cat-card" id="cat-burger">
+          <div class="cat-emoji">🍔</div>
+          <span class="cat-name">Burgers</span>
+          <span class="cat-count">63 places</span>
+        </a>
+        <a href="#best-sellers" class="cat-card" id="cat-biryani">
+          <div class="cat-emoji">🍛</div>
+          <span class="cat-name">Biryani</span>
+          <span class="cat-count">92 places</span>
+        </a>
+        <a href="#best-sellers" class="cat-card" id="cat-noodles">
+          <div class="cat-emoji">🍜</div>
+          <span class="cat-name">Noodles</span>
+          <span class="cat-count">37 places</span>
+        </a>
+        <a href="#best-sellers" class="cat-card" id="cat-sushi">
+          <div class="cat-emoji">🍣</div>
+          <span class="cat-name">Sushi</span>
+          <span class="cat-count">22 places</span>
+        </a>
+        <a href="#best-sellers" class="cat-card" id="cat-tacos">
+          <div class="cat-emoji">🌮</div>
+          <span class="cat-name">Tacos</span>
+          <span class="cat-count">18 places</span>
+        </a>
+        <a href="#best-sellers" class="cat-card" id="cat-desserts">
+          <div class="cat-emoji">🍰</div>
+          <span class="cat-name">Desserts</span>
+          <span class="cat-count">54 places</span>
+        </a>
+        <a href="#best-sellers" class="cat-card" id="cat-drinks">
+          <div class="cat-emoji">🥤</div>
+          <span class="cat-name">Beverages</span>
+          <span class="cat-count">41 places</span>
+        </a>
+        <a href="#best-sellers" class="cat-card" id="cat-salad">
+          <div class="cat-emoji">🥗</div>
+          <span class="cat-name">Healthy</span>
+          <span class="cat-count">29 places</span>
+        </a>
+        <a href="#best-sellers" class="cat-card" id="cat-sandwich">
+          <div class="cat-emoji">🥪</div>
+          <span class="cat-name">Sandwiches</span>
+          <span class="cat-count">35 places</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== BEST SELLERS SECTION ==================== -->
+    <section id="best-sellers" class="bestsellers-section">
+      <div class="section-header">
+        <p class="section-label">Most Ordered This Week</p>
+        <h2 class="section-title">Best Seller Dishes</h2>
+        <p class="section-desc">
+          The crowd favourites. Order these once and you will never stop ordering them.
+        </p>
+      </div>
+
+      <div class="food-grid">
+        <!-- Food Card 1: Pizza -->
+        <article class="food-card" id="food-pizza">
+          <div class="food-img-wrap">
+            <img
+              src="./pizza.png"
+              alt="Classic Margherita Pizza — thin crust, mozzarella, basil"
+              class="food-img"
+              loading="lazy"
+            />
+            <span class="food-badge-img">🔥 Trending</span>
+            <button class="food-wishlist" aria-label="Add to wishlist">♡</button>
+          </div>
+          <div class="food-body">
+            <div class="food-meta">
+              <span class="food-rating">⭐ 4.9</span>
+              <span class="food-time">🕐 20 min</span>
+              <span class="food-cuisine">Italian</span>
+            </div>
+            <h3 class="food-title">Classic Margherita Pizza</h3>
+            <p class="food-desc">
+              Hand-stretched thin crust, San Marzano tomato sauce, fresh buffalo mozzarella &amp;
+              fragrant basil — baked in a wood-fired oven at 400 °C.
+            </p>
+            <div class="food-footer">
+              <div class="food-price">
+                <span class="price-current">₹299</span>
+                <span class="price-old">₹399</span>
+                <span class="price-discount">25% OFF</span>
+              </div>
+              <button class="btn-cart" id="add-pizza">+ Add</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Food Card 2: Burger -->
+        <article class="food-card" id="food-burger">
+          <div class="food-img-wrap">
+            <img
+              src="./burger.png"
+              alt="Crispy Chicken Burger — sesame brioche bun, chipotle mayo"
+              class="food-img"
+              loading="lazy"
+            />
+            <span class="food-badge-img">⚡ Fast</span>
+            <button class="food-wishlist" aria-label="Add to wishlist">♡</button>
+          </div>
+          <div class="food-body">
+            <div class="food-meta">
+              <span class="food-rating">⭐ 4.8</span>
+              <span class="food-time">🕐 18 min</span>
+              <span class="food-cuisine">American</span>
+            </div>
+            <h3 class="food-title">Crispy Chicken Burger</h3>
+            <p class="food-desc">
+              Double-fried fillet marinated in 12 secret spices, brioche bun, cheddar, pickled
+              onions &amp; our legendary smoky chipotle mayo. Served with wedges.
+            </p>
+            <div class="food-footer">
+              <div class="food-price">
+                <span class="price-current">₹249</span>
+                <span class="price-old">₹299</span>
+                <span class="price-discount">17% OFF</span>
+              </div>
+              <button class="btn-cart" id="add-burger">+ Add</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Food Card 3: Butter Chicken -->
+        <article class="food-card" id="food-curry">
+          <div class="food-img-wrap">
+            <img
+              src="./curry.png"
+              alt="Creamy Butter Chicken — rich tomato-cream gravy"
+              class="food-img"
+              loading="lazy"
+            />
+            <span class="food-badge-img food-badge-gold">🏆 Best Rated</span>
+            <button class="food-wishlist" aria-label="Add to wishlist">♡</button>
+          </div>
+          <div class="food-body">
+            <div class="food-meta">
+              <span class="food-rating">⭐ 4.9</span>
+              <span class="food-time">🕐 30 min</span>
+              <span class="food-cuisine">Indian</span>
+            </div>
+            <h3 class="food-title">Creamy Butter Chicken</h3>
+            <p class="food-desc">
+              Slow-cooked overnight in velvety tomato-butter-cream gravy with 20+ whole spices.
+              Award-winning recipe perfected over 15 years. Serves 1–2.
+            </p>
+            <div class="food-footer">
+              <div class="food-price">
+                <span class="price-current">₹349</span>
+                <span class="price-old">₹449</span>
+                <span class="price-discount">22% OFF</span>
+              </div>
+              <button class="btn-cart" id="add-curry">+ Add</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Food Card 4: Lava Cake -->
+        <article class="food-card" id="food-lava">
+          <div class="food-img-wrap">
+            <img
+              src="./lava_cake.png"
+              alt="Warm Chocolate Lava Cake — molten Belgian dark chocolate"
+              class="food-img"
+              loading="lazy"
+            />
+            <span class="food-badge-img">✨ Chef's Pick</span>
+            <button class="food-wishlist" aria-label="Add to wishlist">♡</button>
+          </div>
+          <div class="food-body">
+            <div class="food-meta">
+              <span class="food-rating">⭐ 5.0</span>
+              <span class="food-time">🕐 15 min</span>
+              <span class="food-cuisine">Dessert</span>
+            </div>
+            <h3 class="food-title">Chocolate Lava Cake</h3>
+            <p class="food-desc">
+              70% dark Belgian couverture chocolate, warm molten centre, Madagascar vanilla ice
+              cream, fresh strawberries &amp; a cocoa dusting. The ultimate finish.
+            </p>
+            <div class="food-footer">
+              <div class="food-price">
+                <span class="price-current">₹199</span>
+                <span class="price-old">₹249</span>
+                <span class="price-discount">20% OFF</span>
+              </div>
+              <button class="btn-cart" id="add-lava">+ Add</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Food Card 5: Veg Biryani -->
+        <article class="food-card" id="food-biryani">
+          <div class="food-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1563379091339-03246963d96c?w=600&q=80"
+              alt="Dum Biryani — fragrant basmati with saffron"
+              class="food-img"
+              loading="lazy"
+            />
+            <span class="food-badge-img">🌿 Veg Option</span>
+            <button class="food-wishlist" aria-label="Add to wishlist">♡</button>
+          </div>
+          <div class="food-body">
+            <div class="food-meta">
+              <span class="food-rating">⭐ 4.8</span>
+              <span class="food-time">🕐 35 min</span>
+              <span class="food-cuisine">Indian</span>
+            </div>
+            <h3 class="food-title">Dum Biryani — Royal</h3>
+            <p class="food-desc">
+              Slow-cooked in a sealed handi with saffron-steeped basmati rice, whole spices,
+              crispy fried onions &amp; rose water. Pure royal Mughlai heritage.
+            </p>
+            <div class="food-footer">
+              <div class="food-price">
+                <span class="price-current">₹319</span>
+                <span class="price-old">₹389</span>
+                <span class="price-discount">18% OFF</span>
+              </div>
+              <button class="btn-cart" id="add-biryani">+ Add</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Food Card 6: Pad Thai -->
+        <article class="food-card" id="food-noodles">
+          <div class="food-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80"
+              alt="Dragon Noodles — wok-tossed spicy noodles"
+              class="food-img"
+              loading="lazy"
+            />
+            <span class="food-badge-img">🌶️ Spicy</span>
+            <button class="food-wishlist" aria-label="Add to wishlist">♡</button>
+          </div>
+          <div class="food-body">
+            <div class="food-meta">
+              <span class="food-rating">⭐ 4.7</span>
+              <span class="food-time">🕐 22 min</span>
+              <span class="food-cuisine">Chinese</span>
+            </div>
+            <h3 class="food-title">Dragon Spicy Noodles</h3>
+            <p class="food-desc">
+              Wok-tossed flat rice noodles in a fiery Szechuan chilli-garlic sauce with crispy
+              tofu, bean sprouts &amp; spring onion ribbons. Dangerously addictive.
+            </p>
+            <div class="food-footer">
+              <div class="food-price">
+                <span class="price-current">₹229</span>
+                <span class="price-old">₹269</span>
+                <span class="price-discount">15% OFF</span>
+              </div>
+              <button class="btn-cart" id="add-noodles">+ Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== OFFER BANNER ==================== -->
+    <section class="offer-banner-section" id="offers">
+      <div class="offer-banner" id="offer-main">
+        <div class="offer-text">
+          <p class="offer-label">Limited Time Deal</p>
+          <h2 class="offer-title">Get 40% OFF Your First Order</h2>
+          <p class="offer-sub">Use code <strong class="offer-code">STREET40</strong> at checkout. Valid till midnight. No minimum order.</p>
+          <a href="#restaurants" class="btn-offer" id="claim-offer-btn">Claim Offer Now →</a>
+        </div>
+        <div class="offer-emoji-stack">
+          <span>🍕</span><span>🍔</span><span>🍛</span><span>🍜</span><span>🍣</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESTAURANTS SECTION ==================== -->
+    <section id="restaurants" class="restaurants-section">
+      <div class="section-header">
+        <p class="section-label">Handpicked &amp; Verified</p>
+        <h2 class="section-title">Top Restaurants Near You</h2>
+        <p class="section-desc">
+          Every partner restaurant passes our rigorous 50-point food safety audit before joining QuickBite.
+        </p>
+      </div>
+
+      <div class="restaurant-grid">
+        <!-- Restaurant 1 -->
+        <article class="restaurant-card" id="rest-pizza-house">
+          <div class="rest-img-wrap">
+            <img
+              src="./pizza_restaurant.png"
+              alt="The Pizza House — authentic Italian wood-fired pizza restaurant"
+              class="rest-img"
+              loading="lazy"
+            />
+            <span class="rest-badge rest-badge-top">🥇 #1 This Week</span>
+          </div>
+          <div class="rest-body">
+            <div class="rest-header-row">
+              <h3 class="rest-name">The Pizza House</h3>
+              <span class="rest-rating-pill">⭐ 4.9</span>
+            </div>
+            <p class="rest-cuisine">Italian · Wood-fired · Pasta</p>
+            <p class="rest-desc">
+              Serving authentic Neapolitan pizzas since 1995. Chef Marco trained in Naples brings
+              hand-imported San Marzano tomatoes and aged mozzarella di bufala. 25+ pizza varieties.
+            </p>
+            <div class="rest-meta">
+              <span class="rest-meta-item">📍 MG Road</span>
+              <span class="rest-meta-item">⏱ ~25 min</span>
+              <span class="rest-meta-item">💰 Min ₹299</span>
+            </div>
+            <div class="rest-offers">
+              <span class="rest-offer-tag">20% OFF above ₹599</span>
+            </div>
+            <button class="btn-menu" id="view-pizza-house">View Full Menu →</button>
+          </div>
+        </article>
+
+        <!-- Restaurant 2 -->
+        <article class="restaurant-card" id="rest-biryani-palace">
+          <div class="rest-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=600&q=80"
+              alt="Royal Biryani Palace — Dum biryani specialists"
+              class="rest-img"
+              loading="lazy"
+            />
+            <span class="rest-badge rest-badge-top">🥈 #2 This Week</span>
+          </div>
+          <div class="rest-body">
+            <div class="rest-header-row">
+              <h3 class="rest-name">Royal Biryani Palace</h3>
+              <span class="rest-rating-pill">⭐ 4.8</span>
+            </div>
+            <p class="rest-cuisine">Indian · Mughlai · Kebabs</p>
+            <p class="rest-desc">
+              Legendary Dum Biryani slow-cooked in a sealed handi. Fiery Chettinad Chicken and
+              15+ freshly baked breads from a state-of-the-art tandoor. Pure vegetarian menu too.
+            </p>
+            <div class="rest-meta">
+              <span class="rest-meta-item">📍 Indiranagar</span>
+              <span class="rest-meta-item">⏱ ~30 min</span>
+              <span class="rest-meta-item">💰 Min ₹149</span>
+            </div>
+            <div class="rest-offers">
+              <span class="rest-offer-tag">Free dessert above ₹399</span>
+            </div>
+            <button class="btn-menu" id="view-biryani-palace">View Full Menu →</button>
+          </div>
+        </article>
+
+        <!-- Restaurant 3 -->
+        <article class="restaurant-card" id="rest-burger-junction">
+          <div class="rest-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=600&q=80"
+              alt="Burger Junction — fresh never-frozen burgers"
+              class="rest-img"
+              loading="lazy"
+            />
+            <span class="rest-badge rest-badge-top">🥉 #3 This Week</span>
+          </div>
+          <div class="rest-body">
+            <div class="rest-header-row">
+              <h3 class="rest-name">Burger Junction</h3>
+              <span class="rest-rating-pill">⭐ 4.8</span>
+            </div>
+            <p class="rest-cuisine">American · Grill · Loaded Fries</p>
+            <p class="rest-desc">
+              Home of Bangalore's biggest burgers. 100% fresh-never-frozen patties grilled to order.
+              30+ varieties including the legendary Double Smash Burger &amp; Spicy Paneer Delight.
+            </p>
+            <div class="rest-meta">
+              <span class="rest-meta-item">📍 Koramangala</span>
+              <span class="rest-meta-item">⏱ ~20 min</span>
+              <span class="rest-meta-item">💰 Min ₹199</span>
+            </div>
+            <div class="rest-offers">
+              <span class="rest-offer-tag">Free fries with every burger</span>
+            </div>
+            <button class="btn-menu" id="view-burger-junction">View Full Menu →</button>
+          </div>
+        </article>
+
+        <!-- Restaurant 4 -->
+        <article class="restaurant-card" id="rest-sushi-world">
+          <div class="rest-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=600&q=80"
+              alt="Sushi World — premium Japanese omakase"
+              class="rest-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="rest-body">
+            <div class="rest-header-row">
+              <h3 class="rest-name">Sushi World</h3>
+              <span class="rest-rating-pill">⭐ 4.9</span>
+            </div>
+            <p class="rest-cuisine">Japanese · Sashimi · Ramen</p>
+            <p class="rest-desc">
+              Executive Chef Hiroshi Tanaka — 25+ years in Osaka — crafts ultra-fresh sashimi from
+              ingredients air-flown from Tsukiji market three times a week.
+            </p>
+            <div class="rest-meta">
+              <span class="rest-meta-item">📍 Whitefield</span>
+              <span class="rest-meta-item">⏱ ~35 min</span>
+              <span class="rest-meta-item">💰 Min ₹399</span>
+            </div>
+            <div class="rest-offers">
+              <span class="rest-offer-tag">Complimentary miso soup</span>
+            </div>
+            <button class="btn-menu" id="view-sushi-world">View Full Menu →</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Rankings Table -->
+      <div class="table-wrap" id="rankings-table-wrap">
+        <h3 class="table-heading">📊 Weekly Rankings — June 2026</h3>
+        <table class="rankings-table" id="rankings-table">
+          <caption class="table-caption">
+            Live restaurant rankings updated every Monday at 12 AM based on customer orders &amp; ratings.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Restaurant</th>
+              <th scope="col">Cuisine</th>
+              <th scope="col">Rating</th>
+              <th scope="col">Avg. Time</th>
+              <th scope="col">Min. Order</th>
+              <th scope="col">Current Offer</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-row-highlight">
+              <td>🥇 #1</td>
+              <td><strong>The Pizza House</strong></td>
+              <td>Italian</td>
+              <td>⭐ 4.9</td>
+              <td>25 min</td>
+              <td>₹299</td>
+              <td>20% OFF above ₹599</td>
+              <td><a href="#rest-pizza-house" class="table-action-link">Order Now</a></td>
+            </tr>
+            <tr>
+              <td>🥈 #2</td>
+              <td><strong>Royal Biryani Palace</strong></td>
+              <td>Indian · Mughlai</td>
+              <td>⭐ 4.8</td>
+              <td>30 min</td>
+              <td>₹149</td>
+              <td>Free dessert above ₹399</td>
+              <td><a href="#rest-biryani-palace" class="table-action-link">Order Now</a></td>
+            </tr>
+            <tr>
+              <td>🥉 #3</td>
+              <td><strong>Dragon Noodle Bar</strong></td>
+              <td>Chinese</td>
+              <td>⭐ 4.8</td>
+              <td>20 min</td>
+              <td>₹179</td>
+              <td>Buy 1 Get 1 on noodles</td>
+              <td><a href="#restaurants" class="table-action-link">Order Now</a></td>
+            </tr>
+            <tr>
+              <td>#4</td>
+              <td><strong>Burger Junction</strong></td>
+              <td>American</td>
+              <td>⭐ 4.8</td>
+              <td>20 min</td>
+              <td>₹199</td>
+              <td>Free fries with every burger</td>
+              <td><a href="#rest-burger-junction" class="table-action-link">Order Now</a></td>
+            </tr>
+            <tr>
+              <td>#5</td>
+              <td><strong>Green Leaf Vegan Kitchen</strong></td>
+              <td>Vegan &amp; Organic</td>
+              <td>⭐ 4.7</td>
+              <td>35 min</td>
+              <td>₹249</td>
+              <td>15% OFF first-time orders</td>
+              <td><a href="#restaurants" class="table-action-link">Order Now</a></td>
+            </tr>
+            <tr>
+              <td>#6</td>
+              <td><strong>Sushi World</strong></td>
+              <td>Japanese</td>
+              <td>⭐ 4.9</td>
+              <td>35 min</td>
+              <td>₹399</td>
+              <td>Complimentary miso soup</td>
+              <td><a href="#rest-sushi-world" class="table-action-link">Order Now</a></td>
+            </tr>
+            <tr>
+              <td>#7</td>
+              <td><strong>The Taco Fiesta</strong></td>
+              <td>Mexican</td>
+              <td>⭐ 4.6</td>
+              <td>22 min</td>
+              <td>₹199</td>
+              <td>3 Tacos for ₹299 combo</td>
+              <td><a href="#restaurants" class="table-action-link">Order Now</a></td>
+            </tr>
+            <tr>
+              <td>#8</td>
+              <td><strong>Spice Garden</strong></td>
+              <td>Indian</td>
+              <td>⭐ 4.7</td>
+              <td>30 min</td>
+              <td>₹149</td>
+              <td>Weekend thali at ₹199</td>
+              <td><a href="#restaurants" class="table-action-link">Order Now</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">
+          <strong>📌 Note:</strong> All listed restaurants have passed QuickBite's 50-point food
+          safety audit. Rankings refresh every Monday at 12:00 AM.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about-section">
+      <div class="section-header">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">About QuickBite</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-intro">
+            <strong>QuickBite</strong> was born in 2020 with one powerful vision:
+            <em>to make great street food accessible to everyone, everywhere, at any time.</em>
+          </p>
+          <p>
+            What started as a small startup with just 10 restaurant partners in Bangalore has grown
+            into one of India's fastest-growing food delivery platforms — operating across
+            <strong>50+ cities</strong>, partnering with <strong>500+ restaurants</strong>, and
+            supported by a fleet of <strong>10,000+ dedicated delivery partners</strong>.
+          </p>
+          <p>
+            We have delivered over <strong>5 million meals</strong> — and we are just getting started.
+            Our platform is built on three non-negotiables: trust, transparency, and a deep, unshakeable
+            passion for food.
+          </p>
+
+          <h3 class="about-values-heading">Our Core Values</h3>
+          <ol class="about-values-list">
+            <li>
+              <strong>Quality First</strong> — We partner only with restaurants that meet our strict
+              50-point food quality and hygiene standards.
+            </li>
+            <li>
+              <strong>Speed &amp; Reliability</strong> — Every delivery step is optimised so your food
+              arrives on time, every single time.
+            </li>
+            <li>
+              <strong>Customer Happiness</strong> — Your satisfaction is our only measure of success.
+              Always.
+            </li>
+            <li>
+              <strong>Sustainability</strong> — We use eco-friendly packaging and support green delivery
+              initiatives across all cities.
+            </li>
+            <li>
+              <strong>Community</strong> — We invest in local restaurants and empower small food
+              entrepreneurs to grow their business.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Achievements Table -->
+        <div class="about-stats-wrap">
+          <h3 class="about-stats-heading">Our Milestones</h3>
+          <table class="about-table" id="achievements-table">
+            <thead>
+              <tr>
+                <th scope="col">Milestone</th>
+                <th scope="col">Achievement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cities Covered</td>
+                <td><strong>50+</strong></td>
+              </tr>
+              <tr>
+                <td>Restaurant Partners</td>
+                <td><strong>500+</strong></td>
+              </tr>
+              <tr>
+                <td>Delivery Partners</td>
+                <td><strong>10,000+</strong></td>
+              </tr>
+              <tr>
+                <td>Happy Customers</td>
+                <td><strong>2 Million+</strong></td>
+              </tr>
+              <tr>
+                <td>Meals Delivered</td>
+                <td><strong>5 Million+</strong></td>
+              </tr>
+              <tr>
+                <td>Average App Rating</td>
+                <td><strong>4.7 / 5.0</strong></td>
+              </tr>
+              <tr>
+                <td>Avg. Delivery Time</td>
+                <td><strong>28 Minutes</strong></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Testimonial -->
+          <blockquote class="testimonial" id="testimonial-main">
+            <p class="testimonial-text">
+              "QuickBite has completely transformed the way I eat. The food arrives fresh and hot
+              every single time, and the variety is absolutely unmatched. I order at least 4 times a
+              week!"
+            </p>
+            <footer class="testimonial-author">
+              — <strong>Priya S.</strong>, Bangalore &nbsp;·&nbsp; ⭐⭐⭐⭐⭐
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Why QuickBite Feature Grid -->
+      <div class="features-grid">
+        <div class="feature-card" id="feat-speed">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">30-Min Guarantee</h3>
+          <p class="feature-desc">We promise speed without compromising freshness. Delivered fast, always hot.</p>
+        </div>
+        <div class="feature-card" id="feat-tracking">
+          <div class="feature-icon">📡</div>
+          <h3 class="feature-title">Live Order Tracking</h3>
+          <p class="feature-desc">Know exactly where your food is every second from kitchen to doorstep.</p>
+        </div>
+        <div class="feature-card" id="feat-pricing">
+          <div class="feature-icon">💸</div>
+          <h3 class="feature-title">Zero Hidden Charges</h3>
+          <p class="feature-desc">What you see is exactly what you pay. No surprise fees. Ever.</p>
+        </div>
+        <div class="feature-card" id="feat-support">
+          <div class="feature-icon">🎧</div>
+          <h3 class="feature-title">24/7 Support</h3>
+          <p class="feature-desc">Our team is always here — day or night — to resolve every concern.</p>
+        </div>
+        <div class="feature-card" id="feat-payment">
+          <div class="feature-icon">💳</div>
+          <h3 class="feature-title">All Payment Methods</h3>
+          <p class="feature-desc">UPI, Cards, Net Banking, Wallets and Cash on Delivery. Your choice.</p>
+        </div>
+        <div class="feature-card" id="feat-hygiene">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">Contactless &amp; Safe</h3>
+          <p class="feature-desc">Tamper-proof packaging and contactless delivery for your safety.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <p class="section-label">We'd Love to Hear From You</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">
+          Questions, feedback, partnerships or complaints — our team responds within 24 hours.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info" id="contact-info-block">
+          <h3 class="contact-info-heading">QuickBite Head Office</h3>
+          <address class="contact-address">
+            123 Food Street, Koramangala 5th Block,<br />
+            Bangalore &mdash; 560034, Karnataka, India
+          </address>
+          <ul class="contact-details-list">
+            <li class="contact-detail">
+              <span class="contact-icon">📞</span>
+              <a href="tel:+919876543210" class="contact-link">+91 98765 43210</a>
+            </li>
+            <li class="contact-detail">
+              <span class="contact-icon">📧</span>
+              <a href="mailto:support@quickbite.in" class="contact-link">support@quickbite.in</a>
+            </li>
+            <li class="contact-detail">
+              <span class="contact-icon">🕐</span>
+              <span>Mon – Sun &nbsp;|&nbsp; 6:00 AM – 12:00 Midnight</span>
+            </li>
+          </ul>
+
+          <div class="social-links" id="social-links">
+            <h3 class="social-heading">Follow Us</h3>
+            <div class="social-row">
+              <a
+                href="https://www.instagram.com/quickbite"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                id="social-instagram"
+                aria-label="Follow QuickBite on Instagram"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                  alt="Instagram"
+                  width="32"
+                  height="32"
+                />
+                Instagram
+              </a>
+              <a
+                href="https://www.youtube.com/@quickbite"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                id="social-youtube"
+                aria-label="Subscribe on YouTube"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                  alt="YouTube"
+                  width="32"
+                  height="32"
+                />
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/company/quickbite"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                id="social-linkedin"
+                aria-label="Follow QuickBite on LinkedIn"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                  alt="LinkedIn"
+                  width="32"
+                  height="32"
+                />
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap">
+          <form action="#" method="post" class="contact-form" id="contact-form" novalidate>
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">📋 Send Us a Message</legend>
+
+              <div class="form-group">
+                <label for="fullname" class="form-label">
+                  Full Name <sup class="required-star">*</sup>
+                </label>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="e.g. Rahul Sharma"
+                  minlength="2"
+                  maxlength="100"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  Email Address <sup class="required-star">*</sup>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="e.g. rahul@example.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="mobile" class="form-label">
+                  Mobile Number <sup class="required-star">*</sup>
+                </label>
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  class="form-input"
+                  placeholder="10-digit mobile number"
+                  pattern="[6-9][0-9]{9}"
+                  maxlength="10"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <select id="subject" name="subject" class="form-select">
+                  <option value="">— Select a Subject —</option>
+                  <option value="order-issue">Issue with My Order</option>
+                  <option value="refund">Refund / Cancellation Request</option>
+                  <option value="feedback">General Feedback</option>
+                  <option value="restaurant-partnership">Restaurant Partnership Inquiry</option>
+                  <option value="delivery-partner">Become a Delivery Partner</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  rows="5"
+                  placeholder="Describe your query or feedback in detail…"
+                  maxlength="1000"
+                ></textarea>
+              </div>
+
+              <div class="form-group form-check">
+                <label for="newsletter" class="form-check-label">
+                  <input
+                    type="checkbox"
+                    id="newsletter"
+                    name="newsletter"
+                    value="yes"
+                    class="form-checkbox"
+                  />
+                  Subscribe to our newsletter for exclusive deals &amp; early access offers
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <input type="submit" value="📨 Send Message" class="btn-submit" id="submit-form" />
+                <input type="reset" value="🔄 Clear" class="btn-reset" id="reset-form" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="site-footer">
+      <div class="footer-inner">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2 class="footer-brand-name">🍜 QuickBite</h2>
+          <p class="footer-tagline">
+            <em>Delivering happiness, one bold meal at a time.</em>
+          </p>
+          <p class="footer-desc">
+            India's boldest street-food delivery platform. Bringing authentic flavours from 500+
+            restaurants straight to your doorstep — hot, fresh, fast.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#categories" class="footer-link">Browse Menu</a></li>
+            <li><a href="#best-sellers" class="footer-link">Best Sellers</a></li>
+            <li><a href="#restaurants" class="footer-link">Restaurants</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Food Categories -->
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Food Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#categories" class="footer-link">🍕 Pizzas</a></li>
+            <li><a href="#categories" class="footer-link">🍔 Burgers</a></li>
+            <li><a href="#categories" class="footer-link">🍛 Biryani &amp; Rice</a></li>
+            <li><a href="#categories" class="footer-link">🍜 Chinese &amp; Noodles</a></li>
+            <li><a href="#categories" class="footer-link">🍣 Sushi &amp; Japanese</a></li>
+            <li><a href="#categories" class="footer-link">🍰 Desserts &amp; Sweets</a></li>
+            <li><a href="#categories" class="footer-link">🥤 Beverages &amp; Juices</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Legal &amp; Policies</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms &amp; Conditions</a></li>
+            <li><a href="#" class="footer-link">Refund &amp; Cancellation</a></li>
+            <li><a href="#" class="footer-link">Cookie Policy</a></li>
+            <li><a href="#" class="footer-link">Partner with Us</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 <strong>QuickBite Technologies Pvt. Ltd.</strong> All Rights Reserved.
+          &nbsp;|&nbsp; Made with ❤️ in Bangalore, India.
+        </p>
+        <a href="#top" class="back-to-top" id="back-to-top-btn">↑ Back to Top</a>
+      </div>
+    </footer>
+  </body>
+</html>
